@@ -31,7 +31,7 @@ function writeFile(Path, content) {
 }
 
 async function MainRun(PageNumBer, PathSave) {
-  let data = await GetHome(PageNumBer);
+  let data = await GetHome(PageNumBer ? PageNumBer : 3);
   let result = [];
   let arrFetch = data.slice(0, PageNumBer);
   for (let item of arrFetch) {
@@ -42,6 +42,7 @@ async function MainRun(PageNumBer, PathSave) {
   console.log("Your Data dowloaded successfully");
   writeFile(PathSave, JSON.stringify(result));
   // return result;
+  await main();
   console.log("done");
   console.log("Closing the interface and app");
   rl.close();
@@ -86,15 +87,12 @@ async function GetDetailPlayList(Slug) {
   // return res.json(tag)
   let quotes = await page.evaluate(() => {
     let songlink = document.querySelectorAll(".js-player source");
+    let imageAblum = document.querySelector(".cv_custom_album_image_img")
     let headingPlaylist = document.querySelector(
       ".cv_custom_release_album_main_heading h2"
     );
     let quotesElement = document.body.querySelectorAll(".plyr__controls");
-    // quotesElement.forEach(item=>{
-    //     const title=item.querySelector("h4")
-    //     const artist=item.querySelector("#artistLabel")
-    //     console.log(title,artist)
-    // })
+
     let arr = Object.values(quotesElement).map((item, idx) => {
       // console.log(item)
       const title = item.querySelector("h4");
@@ -109,6 +107,7 @@ async function GetDetailPlayList(Slug) {
       };
     });
     return {
+      imgae_link: imageAblum.getAttribute("src"),
       name: headingPlaylist.innerHTML,
       songs: arr,
     };
