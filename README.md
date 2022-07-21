@@ -13,6 +13,7 @@ It also gets all song in each playlist on this website
   
   Step 2: in terminal run command : node index.js <path> <TotalPage> .
   
+  
         <path> : Inclued your place that you want to save this file , your format ( type of file ) .
         
               Example : Path: "D:\web-practise\Tailwindcss".
