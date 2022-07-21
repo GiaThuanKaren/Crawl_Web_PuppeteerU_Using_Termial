@@ -14,6 +14,7 @@ It also gets all song in each playlist on this website
   Step 2: in terminal run command : node index.js path TotalPage or npm run crawl path TotalPage  .
   
   
+  
         <path> : Inclued your place that you want to save this file , your format ( type of file ) .
         
               Example : Path: "D:\web-practise\Tailwindcss".
@@ -25,8 +26,10 @@ It also gets all song in each playlist on this website
         <TotalPage > : A number of playlist that you want to crawl , default value is : 3 .
                
     
-    ![image](https://user-images.githubusercontent.com/86192249/180125603-674d974e-aa65-4427-9031-391ca7333844.png)
+    
 
     
-    
+ ![image](https://user-images.githubusercontent.com/86192249/180125682-dedf4edf-93c9-40a1-aaf5-f82f3e80105e.png)
+
+
     
