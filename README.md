@@ -11,7 +11,7 @@ It also gets all song in each playlist on this website
 # How To Use This Tool
   Step 1: git clone https://github.com/GiaThuanKaren/Crawl_Web_PuppeteerU_Using_Terminal.git .
   
-  Step 2: in terminal run command : node index.js path TotalPage .
+  Step 2: in terminal run command : node index.js path TotalPage or npm run crawl path TotalPage  .
   
   
         <path> : Inclued your place that you want to save this file , your format ( type of file ) .
