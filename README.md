@@ -27,6 +27,9 @@ It also gets all song in each playlist on this website
                
     
     
+# Example respone
+
+![image](https://user-images.githubusercontent.com/86192249/180127810-5d2757ea-759a-42d3-8a5b-b675ab4b29f2.png)
 
     
  ![image](https://user-images.githubusercontent.com/86192249/180125682-dedf4edf-93c9-40a1-aaf5-f82f3e80105e.png)
