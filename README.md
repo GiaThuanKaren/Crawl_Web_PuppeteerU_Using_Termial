@@ -24,5 +24,9 @@ It also gets all song in each playlist on this website
                        
         <TotalPage > : A number of playlist that you want to crawl , default value is : 3 .
                
-        
+    
+    ![image](https://user-images.githubusercontent.com/86192249/180125603-674d974e-aa65-4427-9031-391ca7333844.png)
+
+    
+    
     
